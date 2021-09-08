@@ -1,0 +1,45 @@
+{
+  "name": "restocart",
+  "version": "1.0.0",
+  "description": "Sample shopping cart app",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "nodemon": "nodemon --ignore 'client/*'",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
+  },
+  "author": "Filipe Laborde",
+  "license": "MIT",
+  "dependencies": {
+    "base-58": "0.0.1",
+    "bcrypt": ">=5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "luxon": "^1.26.0",
+    "mongoose": "^5.9.26",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.6.3",
+    "passport": "^0.4.1",
+    "passport-facebook": "^3.0.0",
+    "passport-github": "^1.1.0",
+    "passport-google-oauth": "^2.0.0",
+    "passport-linkedin-oauth2": "^2.0.0",
+    "passport-twitter": "^0.1.5",
+    "sharp": "^0.27.2",
+    "stripe": "^8.145.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "nodemon": "^2.0.7"
+  }
+}

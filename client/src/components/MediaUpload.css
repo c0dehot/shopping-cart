@@ -1,0 +1,70 @@
+.media-attachment { 
+   position: relative;
+}
+.media-attachment IMG {
+   opacity: 0.2;
+   /* image-orientation: from-image; */
+}
+.media-attachment DIV {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   height: 100%;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center top;
+   z-index: 997;
+}
+.media-attachment INPUT[type=file] {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   height: 100%;
+   opacity: 0;
+   z-index: 1000;
+   cursor: pointer;
+}
+.media-attachment BUTTON {
+   position: absolute;
+   bottom: 0px;
+   left: 0px;
+   z-index:1001;
+   opacity: 0.7;
+   width: 100%;
+}
+.media-upload {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   z-index:998;
+   width: 100%;
+}
+.media-delete {
+   position: absolute;
+   top: 0px;
+   right: 0px;
+   z-index:1002;
+}
+.image-rotate-left {
+   position: absolute;
+   bottom: 5px;
+   left: 5px;
+   width: 5vh;
+   transform: scaleX(-1);
+   border: 2px solid white;
+   border-radius: 25%;
+   opacity: 0.8 !important;
+   z-index: 1001;
+}
+.image-rotate-right {
+   position: absolute;
+   bottom: 5px;
+   right: 5px;
+   width: 5vh;
+   border: 2px solid white;
+   opacity: 0.8 !important;
+   border-radius: 25%;
+   z-index: 1001;
+}

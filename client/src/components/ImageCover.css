@@ -1,0 +1,20 @@
+.image-center {
+   position: relative;
+   overflow: hidden;
+ }
+ 
+ .image-center:after {
+   content: '';
+   display: block;
+   padding-top: 100%;
+ }
+ 
+ .image-center img {
+   width: auto;
+   height: 100%;
+   max-width: none;
+   position: absolute;
+   left: 50%;
+   top: 0;
+   transform: translateX(-50%);
+ }

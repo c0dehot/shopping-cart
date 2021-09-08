@@ -1,0 +1,14 @@
+We would like to welcome %restoName% to our family!
+   
+Your shopping cart that you can share with people is:
+https://restocart.ca/%suggestionUrl%/
+
+And you can login to administer your shopping cart here:
+https://restocart.ca/login
+
+Then sign-in with your email: %email%
+And use the password you created.
+
+Thank you,
+
+Restocart Staff

@@ -1,0 +1,14 @@
+%CONTENT%
+
+*  *  * 
+
+Have questions? Contact us at +1(647)957-8585 or at info@restocart.ca
+
+This email was sent to %email% by Restocart.ca
+         
+Restocart.ca | 2300 Yonge Street | Toronto, Ontario | Canada
+
+Unsubscribe from notifications:
+https://restocart.ca/unsubscribe/%email%/%unsubCode%
+
+© 2021 Restocart.ca. All rights reserved.
