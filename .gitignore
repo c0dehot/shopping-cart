@@ -1,0 +1,12 @@
+node_modules/
+package-lock.json
+.DS_Store
+.env
+.session.dat
+client/public/uploads
+client/build/uploads
+*.dat
+*.log
+*.map
+*.LICENSE.txt
+app/data/emails/_*.*
