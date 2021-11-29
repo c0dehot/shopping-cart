@@ -14,7 +14,7 @@ to the restaurant.
 A signup creates an account (and session key); after that a login will generate a session key that is passed back.
 
 ### /api/users/signup (POST, auth: -)
-<Inputs>
+/Inputs/
 name        : string
 email       : string
 phone       : string
@@ -22,38 +22,38 @@ password    : string
 address     : string
 refCode:    : string - 9-digit reference code
 
-<Returns>
+/Returns/
 status      : boolean
 session     : string
 userData    : array
 
 ### /api/users/login (POST, auth: -)
-<Inputs>
+/Inputs/
 email       : string
 password    : string
 
-<Returns>
+/Returns/
 status      : boolean
 session     : string
 userData    : array
 
 ### /api/users/session (GET, auth: CART)
-<Inputs>
+/Inputs/
 [header] session     : string
 
-<Returns>
+/Returns/
 status      : boolean
 userData    : array
 
 ### /api/users/logout (GET, auth: CART)
-<Inputs>
+/Inputs/
 [header] session     : string
 
-<Returns>
+/Returns/
 status:     : boolean
 
 ### /api/users/affiliates (GET, auth: ADMIN)
-<Returns>
+/Returns/
 status      : boolean
 data        : array
 
@@ -62,22 +62,22 @@ The Stripe API calls the /config to initialize data on the server-side, then the
 value and allows triggering the Stripe popup to pay.
 
 ### /api/stripe/config (GET, auth: CART)
-<Returns>
+/Returns/
 publicKey   : string
 currency    : 3-char currency ISO
 
 ### /api/stripe/checkout (POST, auth: CART)
-<Inputs>
+/Inputs/
 subtotal    : number (payment subtotal)
 
-<Returns>
+/Returns/
 sessionId   : string (payment session-id)
 
 ### /api/stripe/checkout-status (GET, auth: CART)
-<Inputs>
+/Inputs/
 sessionId   : string
 
-<Returns>
+/Returns/
 status      : boolean
 data        : array (order data)
 
@@ -86,11 +86,11 @@ Orders for the customer
 
 ### /api/order/:url/:orderCode? (GET, auth: CART)
 ### /api/order/:orderCode? (GET, auth: CART)
-<Inputs>
+/Inputs/
 url         : string (resto name)
 orderCode   : string
 
-<Returns>
+/Returns/
 status      : boolean
 session     : string
 data        : array
@@ -98,10 +98,10 @@ data        : array
 ### /api/order/[notes|rating|userdetails|restart]/:orderIdCode
 Modify an order (examine the code endpoint for more details)
 
-<Inputs>
+/Inputs/
 orderCode   : string
 
-<Returns>
+/Returns/
 status      : boolean
 data        : array
 
